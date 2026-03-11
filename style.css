@@ -17,8 +17,8 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    background:#d3fcff; 
-    box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+    background:#9fc9cc; 
+    box-shadow: 1px 0px 1.2px 0px #739294; 
     border-radius:3px; 
     padding:1em;
 
@@ -50,8 +50,6 @@ body{
     margin-bottom: 15px;
     font-weight: bold;
 }
-
-/* SUBMIT */
 
 .submit { width:100%; float:left; }
 
@@ -116,10 +114,10 @@ body{
     position: absolute;
     left: 0;
     transform: translateY(3px);
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     border-radius: 50%;
-    border: 0.2em solid #4c4c4c;
+    border: 0.2em solid #181616;
 
 }
 
@@ -130,10 +128,10 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 8px;
-    height: 8px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
-    background-color: #6fcffb;
+    background-color: #ff0000;
     visibility: hidden;
 
 }
@@ -170,7 +168,7 @@ body{
 
 .form_new_input:checked ~ .radio_label,
 .form_new_input:checked ~ .check_label {
-    color: #6fcffb;
+    color: #ff0000;
 }
 
 
