@@ -1,0 +1,29 @@
+.google-nav {
+  /* Fixa o menu no topo da página */
+  position: absolute; 
+  top: 0;
+  right: 0;
+  
+  /* Espaçamento interno */
+  padding: 15px 25px;
+  
+  /* Garante que o texto use a fonte padrão do Google */
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.links-container {
+  display: flex;
+  gap: 20px; /* Espaço entre os links */
+  align-items: center;
+}
+
+.links-container a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87); /* Preto suave clássico do Google */
+  font-size: 13px;
+}
+
+.links-container a:hover {
+  text-decoration: underline; /* Aparece o sublinhado ao passar o mouse */
+}
+
