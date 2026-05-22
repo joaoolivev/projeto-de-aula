@@ -8,30 +8,34 @@
 <body>
   <form>
 <div class="inicio"><h1>cadastre-se</h1></div>
+<div class="caixas">
 <div class="Nome">
-  <label for="username">nome de usuario</label>
-  <input type="text" id="username" name="nome do usuario">
+  <label for="username">insira seu nome de usuario</label>
+  <input type="text" id="username" name="nome do usuario" required>
 </div>
 <div class="email">
   <label for="email">digite seu email</label>
-  <input type="email" id="email" name="digite seu email">
+  <input type="email" id="email" name="digite seu email" required>
 </div>
 <div class="senha">
   <label for="senha">digite sua senha</label>
-  <input type="password" id="senha" name="senha">
+  <input type="password" id="senha" name="senha" required>
 </div>
-<div class="checkbox1">
-  <label for="checkbox1">aceito os termos e condições</label>
-  <input type="checkbox" id="checkbox1" name="checkbox1">
 </div>
-<div class="checkbox1">
-  <label for="checkbox2">aceito receber promoções no meu email</label>
-  <input type="checkbox" id="checkbox2" name="checkbox2">
+<div class="checkboxs">
+<div class="checkbox-box">
+  <label for="check">aceito os termos de uso</label>
+    <input type="checkbox" id="check" required>
+</div>
+<div class="checkbox-box2">
+  <label for="check">aceito receber promoções no meu email</label>
+    <input type="checkbox" id="check">
+</div>
 </div>
 <div class="botao">
-  <label for="botao"></label>
-  <input type="button" id="botao" name="botao" placeholder="enviar">
-</div>
+<button class="btn liquid">
+  <span>enviar</span>
+</button>
 </form>
 </body>
 </html>

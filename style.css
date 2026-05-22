@@ -1,0 +1,193 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+html, body {
+	height: 100%;
+	margin: 0px;
+    gap: 20px;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+     margin: 0;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    height: 100vh;
+}
+h1 {
+    color : rgb(255, 255, 255);
+    text-shadow: 2px 2px orange ;
+}
+form {
+    color: white;
+	display: flex;
+    flex-direction: column;
+	gap: 25px;
+}
+.caixas {
+    font-size: 1.2rem;
+}
+.caixas input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid orange;
+  border-radius: 4px;
+}
+.caixas label {
+    display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  animation: fadeIn 5s infinite;
+ 
+}
+.btn {
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background: none;
+  border: 2px solid #8d3f00fa;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+}
+
+.liquid {
+  background: linear-gradient(#ffa601 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+  background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquid:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff;
+}
+.inicio {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  animation: bounce 3s infinite;
+  animation-duration: 2s;
+}
+
+.inicio::after,
+.inicio::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #000000, #f3b50b);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.inicio::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.inicio:hover::after,
+.inicio:hover::before {
+  transform: scaleX(1);
+}
+.checkbox-box label {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.checkbox-box{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.checkbox-box input{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    border:2px solid orange;
+    border-radius:4px;
+
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.25);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+    .checkbox-box2 label {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.checkbox-box2{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.checkbox-box2 input{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    border:2px solid orange;
+    border-radius:4px;
+
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.25);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+   
+}
+.checkboxs{
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
